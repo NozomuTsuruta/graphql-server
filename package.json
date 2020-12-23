@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "NozomuTsuruta <tuno.0806@icloud.com>",
   "license": "MIT",
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "start": "ts-node server/index.ts",
     "dev": "nodemon server/index.ts"
