@@ -15,20 +15,20 @@ module.exports = {
           allowNull: false,
         },
         user_id: {
-          type: Sequelize.STRING,
+          type: Sequelize.INTEGER,
           allowNull: false,
           onDelete: 'CASCADE',
           references: {
-            model: 'Users',
+            model: 'users',
             key: 'id',
           }
         },
         article_id: {
-          type: Sequelize.STRING,
+          type: Sequelize.INTEGER,
           allowNull: false,
           onDelete: 'CASCADE',
           references: {
-            model: 'Articles',
+            model: 'articles',
             key: 'id',
           }
         },
