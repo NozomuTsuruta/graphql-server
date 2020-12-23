@@ -16,11 +16,6 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "postgres",
-    "password": null,
-    "database": "database_production",
-    "dialect": "postgres",
-    "operatorsAliases": false,
     "use_env_variable": "DATABASE_URL"
   }
 }
