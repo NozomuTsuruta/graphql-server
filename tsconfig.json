@@ -14,7 +14,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "outDir": "dist"
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts"]
