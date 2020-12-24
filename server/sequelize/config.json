@@ -4,19 +4,17 @@
     "password": null,
     "database": "test",
     "host": "127.0.0.1",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": null,
     "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "postgres://ojbyvtremvtxxy:1c1d42b84ffc8abc100f9d283edc75838e779a59a989a239438f4eeac893d257@ec2-34-204-121-199.compute-1.amazonaws.com:5432/d1kcvkl5sn2ghp",
+    "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   }
 }

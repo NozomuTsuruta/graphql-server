@@ -1,5 +1,5 @@
 import { DataTypes, Model } from 'sequelize';
-import { sequelize } from '../sequelize';
+import db from '../sequelize/models';
 
 class Comment extends Model {
   public id!: number;
@@ -25,7 +25,7 @@ Comment.init(
   },
   {
     tableName: 'comments',
-    sequelize: sequelize,
+    sequelize: db.sequelize,
   }
 );
 

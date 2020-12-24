@@ -1,5 +1,5 @@
 import { Association, DataTypes, Model } from 'sequelize';
-import { sequelize } from '../sequelize';
+import db from '../sequelize/models';
 import Comment from './comment';
 
 class Article extends Model {
@@ -41,7 +41,7 @@ Article.init(
   },
   {
     tableName: 'articles',
-    sequelize: sequelize,
+    sequelize: db.sequelize,
   }
 );
 
