@@ -30,8 +30,6 @@ const get_current_user = async (req: Request) => {
 
 /** apollo-serverの作成 */
 const apollo_server = new ApolloServer({
-  introspection: true,
-  playground: true,
   typeDefs: schema,
   resolvers: resolvers,
   context: async ({ req }) => {
