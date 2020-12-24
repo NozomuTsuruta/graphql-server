@@ -14,8 +14,6 @@ const app = express();
 app.use(cors());
 const server = createServer(app);
 const port = process.env.PORT || 3301;
-console.log(process.env.DATABASE_URL);
-console.log(process.env.NODE_ENV);
 
 /** クライアントから受け取ったトークンで認証 */
 const get_current_user = async (req: Request) => {
