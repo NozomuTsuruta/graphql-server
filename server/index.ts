@@ -6,9 +6,11 @@ import express, { Request } from "express";
 import dotenv from "dotenv";
 import User from "./models/user";
 import jwt from "jsonwebtoken";
+import cors from 'cors';
 import { createServer } from "http";
 
 const app = express();
+app.use(cors())
 const server = createServer(app);
 const port = process.env.PORT || 3301;
 
