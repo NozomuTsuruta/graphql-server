@@ -1,21 +1,19 @@
+// 環境変数を使う
+require("dotenv").config();
 import { ApolloServer, AuthenticationError } from "apollo-server-express";
 import resolvers from "./graphql/resolvers";
 import schema from "./graphql/schema";
 import { models } from "./models";
 import express, { Request } from "express";
-import dotenv from "dotenv";
 import User from "./models/user";
 import jwt from "jsonwebtoken";
-import cors from 'cors';
+import cors from "cors";
 import { createServer } from "http";
 
 const app = express();
-app.use(cors())
+app.use(cors());
 const server = createServer(app);
 const port = process.env.PORT || 3301;
-
-// 環境変数を使う
-dotenv.config();
 
 /** クライアントから受け取ったトークンで認証 */
 const get_current_user = async (req: Request) => {
