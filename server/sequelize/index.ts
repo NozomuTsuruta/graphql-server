@@ -1,4 +1,4 @@
-require("dotenv").config();
+require('dotenv').config();
 import path from "path";
 import { Sequelize } from "sequelize";
 
