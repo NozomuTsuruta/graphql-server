@@ -12,7 +12,6 @@ const db = {};
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
-  console.log('production')
 } else {
   sequelize = new Sequelize(
     config.database,
@@ -20,7 +19,6 @@ if (config.use_env_variable) {
     config.password,
     config
   );
-  console.log('development')
 }
 
 fs.readdirSync(__dirname)
